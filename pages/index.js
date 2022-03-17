@@ -56,7 +56,7 @@ export default function Home() {
 
         <div className='grid mb-5'>
           <div className='g-col-6 justify-self-end align-self-center mr-4'>
-            <img src="/infinite.png"/>
+            <img src="/windowing.png"/>
           </div>
           <div className="g-col-6 align-self-center">
             <div className="portfolio_article">
