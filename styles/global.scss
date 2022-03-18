@@ -57,6 +57,14 @@ img {
   display: block;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
 
 // Padding and margin
 // ======================================================
@@ -184,16 +192,7 @@ $directions: (
 // ======================================================
 .intro {
   max-width: 60rem;
-  font-weight: 400;
-  text-align: center;
-  
-  strong {    
-    &:nth-child(1) { color: $purple;}
-    &:nth-child(2) { color: $soft-red;}
-    &:nth-child(3) { color: $orange;}
-    &:nth-child(4) { color: $green;}
-    &:nth-child(5) { color: $soft-blue;}
-  }
+  font-weight: 400;  
 }
 
 // Portfolio
@@ -212,6 +211,7 @@ $directions: (
   border-radius: 2rem;
   background: $purple;
   color: white;
+  transition: .3s background;
 
   &:hover {
     text-decoration: none;
@@ -235,3 +235,9 @@ $directions: (
 .align-left {
   text-align: left !important;
 }
+
+.text-color-purple     { color: $purple;}
+.text-color-soft-red   { color: $soft-red;}
+.text-color-orange     { color: $orange;}
+.text-color-green      { color: $green;}
+.text-color-soft-blue  { color: $soft-blue;}

@@ -11,16 +11,14 @@ export default function Home() {
       </Head>
 
       <main>
-
-        <div className="flex justify-center mb-5 mt-5">
+        <div className="flex mb-5 mt-5">
           <h1 className='intro'>
-            Hi! I'm <strong>Rafa</strong>{' '}
-            and I have spent the last <strong>7 years</strong> at <strong>Tolq.com</strong> <strong>designing</strong> and <strong>implementing</strong> its 3 applications.
+            Hi! I'm <strong className='text-color-purple'>Rafa</strong> and I have spent the last <br />
+            <strong className='text-color-soft-red'>7 years</strong> at <strong className='text-color-orange'>Tolq.com</strong> <strong className='text-color-green'>designing</strong> and <strong className='text-color-soft-blue'>implementing</strong> its 3 applications.
             <br />
-            This is my portfolio:
+            <strong>This is my portfolio:</strong>
           </h1>
         </div>
-
 
         <div className='grid mb-5'>
           <div className='g-col-6 justify-self-end align-self-center mr-3'>            
