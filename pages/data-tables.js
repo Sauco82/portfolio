@@ -20,11 +20,11 @@ export default function DataTable(){
         "/datatable5.png",
       ]}>
         <h1>Data Tables</h1>
-        <p> From a blog site to Google search, almost every single web app in the planet needs list their content. </p>
+        <p> From a blog site to Google search, almost every single web app in the planet needs to list their content. </p>
         <p>Sometimes the content needs to be pretty, sometimes highly interactive and some other times simply functional.</p>
-        <p>Tolq is no exception, and during my time there I have designed (and redesigned) several.</p>    
+        <p>Tolq is no exception, and during my time there I have designed (and redesigned) several data tables.</p>    
         <p>As soon as we add filters to the equation several interaction issues arise that we need to design for carefully.</p>
-        <p>I will show some of those using as example a generic Data Table component I designed and implemented recently.</p>
+        <p>Below I will show some of those using as example a generic Data Table component I designed and implemented recently.</p>
       </Intro>
 
       <Layout>
@@ -32,7 +32,7 @@ export default function DataTable(){
 
         <Zig img="/searchbar.png">
           <h3>Keeping the url synced</h3>
-          <p>When the user changes the filters of the listing the url is updated allowing them to share the current status of their page.</p>
+          <p>When the user changes the filters of the listing the url is updated, allowing them to share the current status of their page.</p>
           <p>On top of that the browser history is properly modified allowing the user to get back to the last state of their page.</p>
           <p>If they keep going back it does not force them to go through every single filter change and takes them to the page they visited before the Datable.</p>
         </Zig>
@@ -51,8 +51,8 @@ export default function DataTable(){
 
         <Zag img="/configurable.png">
           <h3>Configurable content</h3>
-          <p>Even with the included scrolling affordances seeing all the content one is interested into in a single look is far superior.</p>
-          <p>Also in many cases, too many items create noise that makes more difficult to understand things.</p>
+          <p>Even with the included scrolling affordances, seeing all the content one is interested into in a single look is far superior.</p>
+          <p>Generally too many items create noise that makes parsing information far more difficult.</p>
           <p>Because of that the Data Table component allows you to select which items you want to see.</p>
         </Zag>
         <BackHome />

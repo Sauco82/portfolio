@@ -28,7 +28,7 @@ export default function Home() {
             <div className="portfolio_article">
               <h3>Data Tables</h3>
               <p>One of the most frequent needs of nowadays web apps is to show data in a tabular way and Tolq is not an exception.</p>
-              <p>At first glance they look something simple but once you scratch a bit on the surface you can find many interesting details that need to be designed and implemented with utmost care.</p>
+              <p>At first glance they look like something simple but once you scratch the surface a bit on the surface you can find many interesting details that need to be designed and implemented with utmost care.</p>
               <Link href="/data-tables">
                 <a className="btn mt-3">See more</a>
               </Link>
