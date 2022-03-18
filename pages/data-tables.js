@@ -33,7 +33,7 @@ export default function DataTable(){
         <Zig img="/searchbar.png">
           <h3>Keeping the url synced</h3>
           <p>When the user changes the filters of the listing the url is updated, allowing them to share the current status of their page.</p>
-          <p>On top of that the browser history is properly modified allowing the user to get back to the last state of their page.</p>
+          <p>On top of that the browser history is properly modified, allowing the user to get back to the last state of their page.</p>
           <p>If they keep going back it does not force them to go through every single filter change and takes them to the page they visited before the Datable.</p>
         </Zig>
 
