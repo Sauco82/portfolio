@@ -1,5 +1,8 @@
-import Layout from "./Layout/layout"
+import Layout from "../Layout/layout"
 import { useState } from "react";
+
+
+import { portfolio_article__intro } from "./Intro.module.scss"
 
 export default function Intro({children, images}) {
     const [currentImage, setCurrentImage] = useState(0),
@@ -17,7 +20,7 @@ export default function Intro({children, images}) {
     };
 
     return (
-      <div className='portfolio_article__intro'>
+      <div className={portfolio_article__intro}>
         <Layout>
           <div className="grid">
             <div className="g-col-8 justify-self-end align-self-center mr-3">

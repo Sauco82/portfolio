@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../components/Layout/layout'
-import Zag from '../components/Zag'
-import Zig from '../components/Zig'
+import Zag from '../components/zigzag/Zag'
+import Zig from '../components/zigzag/Zig'
 
 export default function Home() {
   return (

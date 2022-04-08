@@ -1,9 +1,9 @@
 import Layout from '../components/Layout/layout'
 import Head from 'next/head';
-import Zig from '../components/Zig';
-import Zag from '../components/Zag';
+import Zig from '../components/zigzag/Zig';
+import Zag from '../components/zigzag/Zag';
 import BackHome from '../components/BackHome';
-import Intro from '../components/Intro';
+import Intro from '../components/intro/Intro';
 
 export default function DataTable(){
   return (

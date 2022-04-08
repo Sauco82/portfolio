@@ -1,3 +1,5 @@
+@import "variables";
+
 @font-face {
   font-family: 'Graphik';
   src: url('../public/fonts/GraphikRegular.otf');  
@@ -16,14 +18,6 @@
   font-weight: 900;
   font-style: normal;
 }
-
-$almost-black: #3F3F3F;
-$purple: #5522FA;
-$soft-red: #FD5E5E;
-$orange: #FDAD00;
-$green: #B6CA94;
-$soft-blue: #8EC1F3;
-$background-blue: #e0eefb;
 
 html {
   overflow-x: hidden!important;
@@ -68,28 +62,6 @@ h3 {
 
 // Padding and margin
 // ======================================================
-$spacer-smaller: 0.5rem;
-$spacer-small: 1rem;
-$spacer: 1.5rem;
-$spacer-big: 3rem;
-$spacer-bigger: 8rem;
-
-$sizes: (
-  0:      0,    
-  1:      $spacer-smaller,
-  2:      $spacer-small,
-  3:      $spacer,
-  4:      $spacer-big,
-  5:      $spacer-bigger,  
-);
-
-$directions: (
-  "":        "",
-  "-top":    "t",
-  "-bottom": "b",
-  "-left":   "l",
-  "-right":  "r"
-);
 
 @mixin spacing-utils($type: "margin") {
   @each $direction-key, $direction in $directions {
@@ -199,11 +171,6 @@ $directions: (
 // ======================================================
 .portfolio_article {
   max-width: 30rem;
-}
-
-.portfolio_article__intro {
-  padding: $spacer-big;
-  background: $background-blue;
 }
 
 .btn {
