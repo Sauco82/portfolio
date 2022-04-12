@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout/layout'
 import Zag from '../components/zigzag/Zag'
 import Zig from '../components/zigzag/Zig'
+import PortfolioIntro from '../components/porfolio_intro/PortFolioIntro'
 
 export default function Home() {
   return (
@@ -12,14 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="flex mb-5 mt-5 sm-mt-2 sm-mb-2">
-          <h1 className='intro'>
-            Hi! I'm <strong className='text-color-purple'>Rafa</strong> and I have spent the last <br />
-            <strong className='text-color-soft-red'>7 years</strong> at <strong className='text-color-orange'>Tolq.com</strong> <strong className='text-color-green'>designing</strong> and <strong className='text-color-soft-blue'>implementing</strong> its 3 applications.
-            <br />
-            <strong>This is my portfolio:</strong>
-          </h1>
-        </div>
+        <PortfolioIntro />
 
         <Zag img="/datatables.png">
           <h3>Data Tables</h3>

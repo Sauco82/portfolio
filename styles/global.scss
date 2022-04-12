@@ -160,13 +160,8 @@ h3 {
 .align-content-stretch  { align-content: stretch }
 
 
-// Intro
+// Button
 // ======================================================
-.intro {
-  max-width: 60rem;
-  font-weight: 400;  
-}
-
 .btn {
   padding: $spacer-small $spacer;
   border-radius: 2rem;
@@ -195,6 +190,10 @@ h3 {
 }
 .align-left {
   text-align: left !important;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .text-color-purple     { color: $purple;}
