@@ -1,0 +1,77 @@
+@import "../../styles/variables.scss";
+
+.zig,
+.zag {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: $spacer-small $spacer-small;
+  margin-bottom: $spacer-bigger;
+
+  .portfolio_article_container,
+  .img_container {
+    grid-column: span 6;
+    align-self: center;
+  }
+}
+
+.portfolio_article {
+  max-width: 30rem;
+}
+
+.zig {
+  .portfolio_article_container {
+    justify-self: end;
+    order: 1;
+  }
+  
+  .img_container {
+    justify-self: start;
+    margin-left: $spacer;
+    order: 2;
+  }
+}
+
+.zag {
+  .portfolio_article_container {
+    justify-self: start;
+    order: 2;
+  }
+  
+  .img_container {
+    justify-self: end;
+    margin-right: $spacer;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .zig,
+  .zag {
+    .img_container,
+    .portfolio_article_container {
+      grid-column: span 12;
+      margin: 0;
+      justify-self: center;
+    }
+
+    .img_container {
+      order: 1;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .portfolio_article_container{
+      order: 2;      
+    }
+    
+    .portfolio_article {
+      max-width: none;
+
+      h1,h2,h3,h4,h5 {
+        margin-top: 0;
+      }
+    }
+  }
+}
