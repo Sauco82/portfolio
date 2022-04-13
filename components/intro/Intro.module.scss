@@ -1,12 +1,76 @@
 @import "../../styles/variables.scss";
 
-.portfolio_article__intro {  
+.intro {  
   padding: $spacer-big;
   background: $background-blue;
 }
 
-@media screen and (max-width: 880px) {
-  .portfolio_article__intro {  
-    
-  } 
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 110px;
+  grid-template-areas:
+    "gallery gallery copy"
+    "gallery gallery navigator";
+}
+
+.gallery {
+  grid-area: gallery;
+  justify-self: end;
+  align-self: center;
+  margin-right: $spacer;
+} 
+
+.copy {
+  grid-area: copy;
+}
+
+.navigator {
+  grid-area: navigator;
+}
+
+@media screen and (max-width: 1260px) {
+  .content {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+      "gallery copy"
+      "gallery navigator";
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .content {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+      "gallery copy"
+      "gallery navigator";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+    padding: $spacer;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 100px 1fr;
+    grid-template-areas:
+      "gallery"
+      "navigator"
+      "copy";
+  }
+  
+  .gallery {
+    margin: 0 0 $spacer 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .navigator {
+    align-self: center;
+    justify-self: center;
+  }
 }
