@@ -29,7 +29,7 @@ export default function TranslationUI(){
 
       <Layout>        
         <div>
-          <h1 className="align-center m-5">Trying to be helpful</h1>
+          <h1 className="align-center m-3 mt-5 mb-5">Trying to be helpful</h1>
 
           <Zig img="/translatinghtml.png">
             <h3>Translating HTML</h3>

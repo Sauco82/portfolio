@@ -22,7 +22,8 @@ export default function TranslationUI(){
       </Intro>
 
       <Layout>
-        <h1 className="align-center m-5">To infinity and beyond</h1>
+      $spacer-bigger $spacer $spacer-big $spacer;
+        <h1 className="align-center m-3 mt-5 mb-5">To infinity and beyond</h1>
 
         <Zig img="/infinite_scroll.png">
           <h3>Why not simply use an infinite scroll?</h3>

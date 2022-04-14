@@ -28,7 +28,7 @@ export default function DataTable(){
       </Intro>
 
       <Layout>
-        <h1 className="align-center m-5 mt-4">Designing a great generic Data Table</h1>
+        <h1 className="align-center m-3 mt-5 mb-5">Designing a great generic Data Table</h1>
 
         <Zig img="/searchbar.png">
           <h3>Keeping the url synced</h3>
