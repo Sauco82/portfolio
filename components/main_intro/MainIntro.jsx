@@ -1,6 +1,6 @@
-import { intro, intro_container } from "./portfolio-intro.module.scss"
+import { intro, intro_container } from "./main-intro.module.scss"
 
-export default function PortfolioIntro(){
+export default function MainIntro(){
   return (
     <div className={intro_container}>
       <h1 className={intro}>

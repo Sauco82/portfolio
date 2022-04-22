@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout/layout'
 import Zag from '../components/zigzag/Zag'
 import Zig from '../components/zigzag/Zig'
-import PortfolioIntro from '../components/porfolio_intro/PortFolioIntro'
+import MainIntro from '../components/main_intro/MainIntro'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <PortfolioIntro />
+        <MainIntro />
 
         <Zag img="/datatables.png">
           <h3>Data Tables</h3>
