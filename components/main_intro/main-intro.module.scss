@@ -1,22 +1,60 @@
 @import "../../styles/variables.scss";
 
+.me {
+  margin: -130px auto $spacer auto;
+  max-width: 25%;
+}
+
 .intro_container {
-  margin: $spacer-big 0;
+  margin: 150px #{- $spacer} $spacer-bigger #{- $spacer};
+  padding: $spacer #{$spacer-big + $spacer} $spacer-bigger #{$spacer-big + $spacer};
+  background: linear-gradient(45deg, #5522FA, #29DAE5);
+  color: white;
+  border-radius: 50px;
+}
+
+.hi {
+  font-size: 96px;
+  display: block; 
+  line-height: 120%;
+  text-align: center; 
 }
 
 .intro {
-  max-width: 60rem;
-  font-weight: 400;  
+  font-size: 30px;
+  text-align: center;
+  max-width: 40rem;
+  font-weight: 400;
+  margin: 0 auto; 
+  line-height: 120%;
+  
+  a {
+    color: $orange;
+  }
+
+  strong, a {
+    font-weight: 600;
+  } 
 }
 
 @media screen and (max-width: 870px) {
-  .intro_container {
+  .me {
+    max-width: min(75%, 200px);
+    margin-top: -50px;
+    margin-bottom: 0;
+  }
+
+  .hi {
     margin: $spacer 0;
+  }
+
+  .intro_container {
+    margin: $spacer 0;    
   }
 
   .intro {
     font-size: 40px;
     max-width: none;
-
+    font-size: 20px;
   }
 }
